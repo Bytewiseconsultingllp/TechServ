@@ -3,12 +3,14 @@
 import React, { useState } from "react";
 import "./CoursesSection.css"; // ⬅ Create this file with CSS below
 
+type CategoryId = "aws" | "gcp" | "m365" | "ai";
+
 const CoursesSection = () => {
-  const [currentCategory, setCurrentCategory] = useState("ai");
+  const [currentCategory, setCurrentCategory] = useState<CategoryId>("ai");
   const [currentSub, setCurrentSub] = useState("foundational");
 
   // CATEGORY BUTTONS
-  const categories = [
+  const categories: { id: CategoryId; label: string }[] = [
     { id: "aws", label: "AWS" },
     { id: "gcp", label: "Google Cloud" },
     { id: "m365", label: "Microsoft 365" },
@@ -16,7 +18,7 @@ const CoursesSection = () => {
   ];
 
   // SUB-TABS FOR EACH CATEGORY
-  const subTabs = {
+  const subTabs: Record<CategoryId, { id: string; label: string }[]> = {
     aws: [
       { id: "beginner", label: "Beginner" },
       { id: "associate", label: "Associate Level" },
