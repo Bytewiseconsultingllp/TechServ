@@ -1,0 +1,235 @@
+/* Courses Section */
+.course-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1d3e;
+  margin: 0;
+}
+
+/* Container */
+.course-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.sidebar button {
+  padding: 16px 20px;
+  border: none;
+  background: #e9ecef;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1d3e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.sidebar button:hover {
+  background: #d1d7e0;
+}
+
+.sidebar button.active {
+  background: #1e4a8f;
+  color: white;
+}
+
+/* Content Area */
+.content {
+  flex: 1;
+}
+
+/* Sub Tabs */
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tabs button {
+  padding: 12px 24px;
+  border: none;
+  background: #e9ecef;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1d3e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabs button:hover {
+  background: #d1d7e0;
+}
+
+.tabs button.active {
+  background: #1a1d3e;
+  color: white;
+}
+
+/* Cards Grid */
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.col-md-4 {
+  width: 100%;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1d3e;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  min-height: 48px;
+}
+
+.par12 {
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.par12 i {
+  color: #1a1d3e;
+  font-size: 14px;
+}
+
+.par13 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1d3e;
+  margin: 16px 0 18px;
+}
+
+/* Explore Button */
+.explorebtn {
+  width: 100%;
+  padding: 13px;
+  background: #1e4a8f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.explorebtn:hover {
+  background: #163a6f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 74, 143, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .course-section .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .sidebar button {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .tabs button {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
