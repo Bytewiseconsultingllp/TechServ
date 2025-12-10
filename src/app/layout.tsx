@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'TechCerv',
     images: [
       {
-        url: '/logo.png', // Use a PNG/JPG image for better compatibility
+        url: '/icon.png', // Use a PNG/JPG image for better compatibility
         width: 1200,
         height: 630,
         alt: 'TechCerv Logo',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "TechCerv - AI, Cloud & Digital Transformation",
     description: "Empowering your business with AI, Cloud, and Digital Transformation services",
-    images: ['/logo.png'],
+    images: ['/icon.png'],
   },
 };
 
