@@ -19,6 +19,29 @@ export const metadata: Metadata = {
   description: "Empowering your business with AI, Cloud, and Digital Transformation services",
   icons: {
     icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
+  openGraph: {
+    title: "TechCerv - AI, Cloud & Digital Transformation",
+    description: "Empowering your business with AI, Cloud, and Digital Transformation services",
+    url: 'https://your-domain.com',
+    siteName: 'TechCerv',
+    images: [
+      {
+        url: '/logo.png', // Use a PNG/JPG image for better compatibility
+        width: 1200,
+        height: 630,
+        alt: 'TechCerv Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "TechCerv - AI, Cloud & Digital Transformation",
+    description: "Empowering your business with AI, Cloud, and Digital Transformation services",
+    images: ['/logo.png'],
   },
 };
 
